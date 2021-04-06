@@ -1,0 +1,27 @@
+﻿<local:Stage x:Class="BpToolsWPFClientTest.StageMultipleCalculation"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:BpToolsWPFClientTest"
+             mc:Ignorable="d" 
+             d:DesignHeight="30" d:DesignWidth="60">
+    <Grid>
+        <Viewbox Stretch="Fill">
+            <Grid>
+                <Path Stroke="Gray" StrokeThickness="1" Fill="White"
+              Data = "M19,4 L49,4 64,19 49,34 19,34 4,19 Z">
+                </Path>
+                <Path Stroke="Gray" StrokeThickness="1" Fill="White"
+              Data = "M17,2 L47,2 62,17 47,32 17,32 2,17 Z">
+                </Path>
+                <Path Stroke="Gray" StrokeThickness="1" Fill="White"
+              Data = "M15,0 L45,0 60,15 45,30 15,30 0,15 Z">
+                </Path>
+            </Grid>
+        </Viewbox>
+        <Border >
+            <TextBlock FontFamily="{Binding BpFontFamily}" FontSize="{Binding BpFontSize}" TextWrapping="Wrap" Text="{Binding DisplayName}" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        </Border>
+    </Grid>
+</local:Stage>

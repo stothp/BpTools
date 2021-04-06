@@ -1,0 +1,29 @@
+﻿<local:Stage x:Class="BpToolsWPFClientTest.StageCollection"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:BpToolsWPFClientTest"
+             mc:Ignorable="d" 
+             d:DesignHeight="30" d:DesignWidth="60">
+    <Grid>
+        <Viewbox Stretch="Fill">
+            <Grid>
+                <Path Stroke="Gray" StrokeThickness="1" Fill="White"
+              Data = "M19,4 L64,4 49,34 4,34 Z">
+                </Path>
+                <Path Stroke="Gray" StrokeThickness="1" Fill="White"
+              Data = "M17,2 L62,2 47,32 2,32 Z">
+                </Path>
+                <Path Stroke="Gray" StrokeThickness="1" Fill="White"
+              Data = "M15,0 L60,0 45,30 0,30 Z">
+                </Path>
+            </Grid>
+        </Viewbox>
+        <Border >
+            <TextBlock FontFamily="{Binding BpFontFamily}" FontSize="{Binding BpFontSize}" TextWrapping="Wrap" Text="{Binding DisplayName}" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        </Border>
+    </Grid>
+
+
+</local:Stage>

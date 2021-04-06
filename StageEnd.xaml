@@ -1,0 +1,18 @@
+﻿<local:Stage x:Class="BpToolsWPFClientTest.StageEnd"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:BpToolsWPFClientTest"
+             mc:Ignorable="d"
+             
+             d:DesignHeight="30" d:DesignWidth="60">
+    <Grid>
+        <Path Stretch="Fill" Stroke="Gray" StrokeThickness="1" Fill="White"
+              Data = "M15,0 L45,0 A15,15 180 1 1 45,30 L15,30 A15,15 180 1 1 15,0">
+        </Path>
+        <Border >
+            <TextBlock FontFamily="{Binding BpFontFamily}" FontSize="{Binding BpFontSize}" TextWrapping="Wrap" Text="{Binding DisplayName}" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        </Border>
+    </Grid>
+</local:Stage>
