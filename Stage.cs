@@ -27,6 +27,8 @@ namespace BpToolsWPFClientTest
         public string Description { get { return bpStage.Description; } }
         public string BpFontFamily { get { return bpStage.Font.Family; } }
         public int BpFontSize { get { return bpStage.Font.Size; } }
+        public Brush BpFontColor { get { return (SolidColorBrush)new BrushConverter().ConvertFrom("#" + bpStage.Font.Color); } }
+        public string BpFontStyle { get { return bpStage.Font.Style; } }
         public TransformGroup Transforms { get; } = new TransformGroup();
         public TranslateTransform StageTranslate { get; } = new TranslateTransform();
 
@@ -39,8 +41,9 @@ namespace BpToolsWPFClientTest
             StageTranslate.Y = bpStage.Y - bpStage.Height / 2;
             Transforms.Children.Add(StageTranslate);
             this.RenderTransform = Transforms;
-            
+
             this.DataContext = this;
         }
+
     }
 }
