@@ -7,11 +7,11 @@
              mc:Ignorable="d" 
              d:DesignHeight="30" d:DesignWidth="60">
     <Grid>
-        <Path Stretch="Fill" Stroke="Black" StrokeThickness="1" Fill="{Binding BpFontColor}" Opacity="0.5"
+        <Path Stretch="Fill" Stroke="Gray" StrokeThickness="1" Fill="LightCyan"
               Data = "M0,0 L60,0 60,30 0,30 Z">
         </Path>
         <Border BorderThickness="1" BorderBrush="Black" HorizontalAlignment="Left" VerticalAlignment="Top" Background="White">
-            <TextBlock FontFamily="{Binding BpFontFamily}" Foreground="Black" FontSize="{Binding BpFontSize}" TextWrapping="Wrap" Text="{Binding DisplayName}" HorizontalAlignment="Left" VerticalAlignment="Center" />
+            <TextBlock FontFamily="{Binding BpFontFamily}" FontSize="{Binding BpFontSize}" TextWrapping="Wrap" Text="{Binding DisplayName}" HorizontalAlignment="Left" VerticalAlignment="Center" />
         </Border>
     </Grid>
 </local:Stage>
