@@ -72,8 +72,9 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="BpTools">
-      <HintPath>..\BpToolsLib\bin\Debug\BpTools.dll</HintPath>
+    <Reference Include="BpTools, Version=1.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\BpToolsLib\bin\x64\Release\BpTools.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -97,6 +98,9 @@
     </ApplicationDefinition>
     <Compile Include="ArrowedLine.xaml.cs">
       <DependentUpon>ArrowedLine.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CollectionGeneratorDialog.xaml.cs">
+      <DependentUpon>CollectionGeneratorDialog.xaml</DependentUpon>
     </Compile>
     <Compile Include="LineArrow.xaml.cs">
       <DependentUpon>LineArrow.xaml</DependentUpon>
@@ -175,7 +179,14 @@
     <Compile Include="StageStart.xaml.cs">
       <DependentUpon>StageStart.xaml</DependentUpon>
     </Compile>
+    <Compile Include="DataRenameWindow.xaml.cs">
+      <DependentUpon>DataRenameWindow.xaml</DependentUpon>
+    </Compile>
     <Page Include="ArrowedLine.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="CollectionGeneratorDialog.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -292,6 +303,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="StageStart.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DataRenameWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

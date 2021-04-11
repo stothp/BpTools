@@ -11,7 +11,7 @@
               Data = "M15,0 L60,0 45,30 0,30 Z">
         </Path>
         <Border >
-            <TextBlock FontFamily="{Binding BpFontFamily}" FontSize="{Binding BpFontSize}" TextWrapping="Wrap" Text="{Binding DisplayName}" HorizontalAlignment="Center" VerticalAlignment="Center" />
+            <TextBlock FontFamily="{Binding BpFontFamily}" FontSize="{Binding BpFontSize}" TextWrapping="Wrap" Text="{Binding DisplayName,Mode=OneWay,UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Center" VerticalAlignment="Center" />
         </Border>
     </Grid>
 

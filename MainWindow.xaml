@@ -5,21 +5,43 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BpToolsWPFClientTest"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800"
+        Title="MainWindow" Height="780" Width="800"
         PreviewKeyDown="Window_PreviewKeyDown">
     <Grid Width="Auto" Height="Auto">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="Auto" />
-            <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
-        <StackPanel Grid.Column="0">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Menu Grid.Column="0">
+            <MenuItem Header="XML">
+                <MenuItem Header="Paste from clipboard" Click="Button_Click"></MenuItem>
+                <MenuItem Header="Copy to clipboard" Click="Button_Click_1"></MenuItem>
+            </MenuItem>
+            <MenuItem Header="Generators">
+                <MenuItem Header="Collection generator" Click="MenuItem_Click"/>
+            </MenuItem>
+        </Menu>
+        <!--<StackPanel Grid.Row="0">
             <Button Content="Load from clipboard" Click="Button_Click"/>
-        </StackPanel>
-        <TabControl Grid.Column="1">
+            <Button Content="Save to clipboard" Click="Button_Click_1"/>
+        </StackPanel>-->
+        <TabControl Grid.Row="1">
             <TabItem Header="Page1" >
-                <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
-                    <local:MainCanvas x:Name = "Canvas1" Width="800" Height="800"/>
-                </ScrollViewer>
+                <Grid Width="Auto" Height="Auto">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="5"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <ScrollViewer Grid.Column="0" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+                        <local:MainCanvas x:Name = "Canvas1" Width="800" Height="800"/>
+                    </ScrollViewer>
+                    <GridSplitter Grid.Column="1" Width="5" HorizontalAlignment="Stretch"/>
+                    <ScrollViewer Grid.Column="2" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+                        <TextBlock Name="XmlData" FontFamily="Courier New"  FontSize="12" TextWrapping="Wrap"/>
+                    </ScrollViewer>
+                </Grid> 
             </TabItem>
         </TabControl>
     </Grid>
