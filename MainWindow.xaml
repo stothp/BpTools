@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BpToolsWPFClientTest"
         mc:Ignorable="d"
-        Title="MainWindow" Height="780" Width="800"
+        Title="BPTools" Height="373.5" Width="800"
         PreviewKeyDown="Window_PreviewKeyDown">
     <Grid Width="Auto" Height="Auto">
 
@@ -18,7 +18,7 @@
                 <MenuItem Header="Paste from clipboard" Click="Button_Click"></MenuItem>
                 <MenuItem Header="Copy to clipboard" Click="Button_Click_1"></MenuItem>
             </MenuItem>
-            <MenuItem Header="Generators">
+            <MenuItem Header="Tools">
                 <MenuItem Header="Collection generator" Click="MenuItem_Click"/>
             </MenuItem>
         </Menu>
