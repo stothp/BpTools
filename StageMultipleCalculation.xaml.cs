@@ -8,7 +8,7 @@ namespace BpToolsWPFClientTest
     /// </summary>
     public partial class StageMultipleCalculation : Stage
     {
-        public StageMultipleCalculation(BpTools.StageMultipleCalculation stageMultipleCalculation) : base(stageMultipleCalculation)
+        public StageMultipleCalculation(BpToolsLib.StageMultipleCalculation stageMultipleCalculation) : base(stageMultipleCalculation)
         {
             InitializeComponent();
         }

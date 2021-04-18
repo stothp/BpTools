@@ -22,7 +22,7 @@ namespace BpToolsWPFClientTest
     /// </summary>
     public partial class StageData : Stage /*, INotifyPropertyChanged*/
     {
-        public StageData(BpTools.StageData stageData) : base(stageData)
+        public StageData(BpToolsLib.StageData stageData) : base(stageData)
         {
             InitializeComponent();
         }

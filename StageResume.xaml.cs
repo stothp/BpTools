@@ -8,7 +8,7 @@ namespace BpToolsWPFClientTest
     /// </summary>
     public partial class StageResume : Stage
     {
-        public StageResume(BpTools.StageResume stageResume) : base(stageResume)
+        public StageResume(BpToolsLib.StageResume stageResume) : base(stageResume)
         {
             InitializeComponent();
         }

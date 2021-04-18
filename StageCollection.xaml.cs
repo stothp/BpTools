@@ -8,7 +8,7 @@ namespace BpToolsWPFClientTest
     /// </summary>
     public partial class StageCollection : Stage
     {
-        public StageCollection(BpTools.Stage stageCollection) : base(stageCollection)
+        public StageCollection(BpToolsLib.Stage stageCollection) : base(stageCollection)
         {
             InitializeComponent();
         }

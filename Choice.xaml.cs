@@ -11,7 +11,7 @@ namespace BpToolsWPFClientTest
     {
         public TransformGroup Transforms { get; } = new TransformGroup();
 
-        public Choice(BpTools.Choice choice)
+        public Choice(BpToolsLib.Choice choice)
         {
             InitializeComponent();
             Width = 10;

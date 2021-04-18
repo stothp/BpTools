@@ -21,7 +21,7 @@ namespace BpToolsWPFClientTest
     public partial class StageCode : Stage
     {
 
-        public StageCode(BpTools.StageCode stageCode) : base(stageCode)
+        public StageCode(BpToolsLib.StageCode stageCode) : base(stageCode)
         {
             InitializeComponent();
         }

@@ -8,7 +8,7 @@ namespace BpToolsWPFClientTest
     /// </summary>
     public partial class StageLoopEnd : Stage
     {
-        public StageLoopEnd(BpTools.StageLoopEnd stageLoopEnd) : base(stageLoopEnd)
+        public StageLoopEnd(BpToolsLib.StageLoopEnd stageLoopEnd) : base(stageLoopEnd)
         {
             InitializeComponent();
         }

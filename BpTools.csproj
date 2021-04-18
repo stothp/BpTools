@@ -99,6 +99,7 @@
     <Compile Include="ArrowedLine.xaml.cs">
       <DependentUpon>ArrowedLine.xaml</DependentUpon>
     </Compile>
+    <Compile Include="StageSetRedraw.cs" />
     <Compile Include="CollectionGeneratorDialog.xaml.cs">
       <DependentUpon>CollectionGeneratorDialog.xaml</DependentUpon>
     </Compile>

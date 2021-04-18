@@ -8,7 +8,7 @@ namespace BpToolsWPFClientTest
     /// </summary>
     public partial class StageAlert : Stage
     {
-        public StageAlert(BpTools.StageAlert stageAlert) : base(stageAlert)
+        public StageAlert(BpToolsLib.StageAlert stageAlert) : base(stageAlert)
         {
             InitializeComponent();
         }

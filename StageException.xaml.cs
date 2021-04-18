@@ -8,7 +8,7 @@ namespace BpToolsWPFClientTest
     /// </summary>
     public partial class StageException : Stage
     {
-        public StageException(BpTools.StageException stageException) : base(stageException)
+        public StageException(BpToolsLib.StageException stageException) : base(stageException)
         {
             InitializeComponent();
         }

@@ -20,7 +20,7 @@ namespace BpToolsWPFClientTest
     /// </summary>
     public partial class StagePageInfo : Stage
     {
-        public StagePageInfo(BpTools.StagePageInfo stagePageInfo) : base(stagePageInfo)
+        public StagePageInfo(BpToolsLib.StagePageInfo stagePageInfo) : base(stagePageInfo)
         {
             InitializeComponent();
         }

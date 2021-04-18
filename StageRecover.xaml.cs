@@ -8,7 +8,7 @@ namespace BpToolsWPFClientTest
     /// </summary>
     public partial class StageRecover : Stage
     {
-        public StageRecover(BpTools.StageRecover stageRecover) : base(stageRecover)
+        public StageRecover(BpToolsLib.StageRecover stageRecover) : base(stageRecover)
         {
             InitializeComponent();
         }

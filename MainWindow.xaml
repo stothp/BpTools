@@ -20,6 +20,7 @@
             </MenuItem>
             <MenuItem Header="Tools">
                 <MenuItem Header="Collection generator" Click="MenuItem_Click"/>
+                <MenuItem Header="Delete unused data and collection stages" Click="MenuItem_Click_1"/>
             </MenuItem>
         </Menu>
         <!--<StackPanel Grid.Row="0">

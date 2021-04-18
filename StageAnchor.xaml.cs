@@ -20,7 +20,7 @@ namespace BpToolsWPFClientTest
     /// </summary>
     public partial class StageAnchor : Stage
     {
-        public StageAnchor(BpTools.StageAnchor stageAnchor) : base (stageAnchor){
+        public StageAnchor(BpToolsLib.StageAnchor stageAnchor) : base (stageAnchor){
             InitializeComponent();
         }
     }

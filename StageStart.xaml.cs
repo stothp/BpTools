@@ -20,7 +20,7 @@ namespace BpToolsWPFClientTest
     /// </summary>
     public partial class StageStart : Stage
     {
-        public StageStart(BpTools.StageStart stageStart) : base(stageStart)
+        public StageStart(BpToolsLib.StageStart stageStart) : base(stageStart)
         {
             InitializeComponent();
         }

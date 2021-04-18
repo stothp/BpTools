@@ -8,7 +8,7 @@ namespace BpToolsWPFClientTest
     /// </summary>
     public partial class StageDecision : Stage
     {
-        public StageDecision(BpTools.StageDecision stageDecision) : base(stageDecision)
+        public StageDecision(BpToolsLib.StageDecision stageDecision) : base(stageDecision)
         {
             InitializeComponent();
         }

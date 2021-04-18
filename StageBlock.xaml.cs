@@ -20,7 +20,7 @@ namespace BpToolsWPFClientTest
     /// </summary>
     public partial class StageBlock : Stage
     {
-        public StageBlock(BpTools.StageBlock stageBlock) : base(stageBlock)
+        public StageBlock(BpToolsLib.StageBlock stageBlock) : base(stageBlock)
         {
             InitializeComponent();
             StageTranslate.X = stageBlock.X;

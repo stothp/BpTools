@@ -1,4 +1,4 @@
-﻿using BpTools;
+﻿using BpToolsLib;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,7 +15,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
-using BPT = BpTools;
+using BPT = BpToolsLib;
 
 namespace BpToolsWPFClientTest
 {

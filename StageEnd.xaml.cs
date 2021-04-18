@@ -20,7 +20,7 @@ namespace BpToolsWPFClientTest
     /// </summary>
     public partial class StageEnd : Stage
     {
-        public StageEnd(BpTools.StageEnd stageEnd) : base(stageEnd)
+        public StageEnd(BpToolsLib.StageEnd stageEnd) : base(stageEnd)
         {
             InitializeComponent();
         }

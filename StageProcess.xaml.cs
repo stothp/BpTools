@@ -21,7 +21,7 @@ namespace BpToolsWPFClientTest
     public partial class StageProcess : Stage
     {
 
-        public StageProcess(BpTools.StageProcess stageProcess) : base(stageProcess)
+        public StageProcess(BpToolsLib.StageProcess stageProcess) : base(stageProcess)
         {
             InitializeComponent();
         }
