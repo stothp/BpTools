@@ -20,15 +20,7 @@ namespace BpToolsWPFClientTest
         {
             InitializeComponent();
             DataContext = this;
-            //double left = startPoint.X < endPoint.X ? startPoint.X : endPoint.X;
-            //double top = startPoint.Y < endPoint.Y ? startPoint.Y : endPoint.Y;
-            //StartPoint = new Point(startPoint.X - left, startPoint.Y - top);          
-            //EndPoint = new Point(endPoint.X - left, endPoint.Y - top);
-            //this.RenderTransform = new TranslateTransform(left, top);
 
-            //double theta = Math.Atan2((double)endPoint.Y - startPoint.Y, (double)endPoint.X - startPoint.X);
-            //theta *= 180 / Math.PI;
-            //LineArrow.Angle = theta;
             this.RenderTransform = Transforms;
             StartPoint = startPoint;
             EndPoint = endPoint;

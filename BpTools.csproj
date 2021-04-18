@@ -103,8 +103,8 @@
     <Compile Include="CollectionGeneratorDialog.xaml.cs">
       <DependentUpon>CollectionGeneratorDialog.xaml</DependentUpon>
     </Compile>
-    <Compile Include="LineArrow.xaml.cs">
-      <DependentUpon>LineArrow.xaml</DependentUpon>
+    <Compile Include="Arrow.xaml.cs">
+      <DependentUpon>Arrow.xaml</DependentUpon>
     </Compile>
     <Compile Include="StageFactory.cs" />
     <Compile Include="Stage.cs" />
@@ -191,7 +191,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="LineArrow.xaml">
+    <Page Include="Arrow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

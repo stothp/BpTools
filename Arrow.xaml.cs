@@ -7,7 +7,7 @@ namespace BpToolsWPFClientTest
     /// <summary>
     /// Interaction logic for Choice.xaml
     /// </summary>
-    public partial class LineArrow : UserControl
+    public partial class Arrow : UserControl
     {
         public static readonly DependencyProperty PositionProperty = DependencyProperty.Register("Position", typeof(string), typeof(UserControl));
 
@@ -26,7 +26,7 @@ namespace BpToolsWPFClientTest
         
         private RotateTransform rotateTransform = new RotateTransform();
 
-        public LineArrow()
+        public Arrow()
         {
 
             InitializeComponent();
