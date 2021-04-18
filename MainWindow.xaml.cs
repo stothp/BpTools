@@ -60,7 +60,7 @@ namespace BpToolsWPFClientTest
                             return;
                         }
 
-                        BpToolsLib.Tools.RenameStage.Rename(stage.BpStage, stageSet, dialog.DataName);
+                        BpToolsLib.Tools.RefactorRename.Rename(stage.BpStage, stageSet, dialog.DataName);
                         StageSetRedraw.Draw(Canvas1, stageSet);
                         AddRenameMenu();
                         RefreshXml();
@@ -148,7 +148,7 @@ namespace BpToolsWPFClientTest
 
         private void MenuItem_Click_1(object sender, RoutedEventArgs e)
         {
-            stageSet = BpToolsLib.Tools.DeleteUnused.DeleteUnusedDataAndCollection(stageSet);
+            BpToolsLib.Tools.DeleteUnused.DeleteUnusedDataAndCollection(stageSet);
             StageSetRedraw.Draw(Canvas1, stageSet);
             AddRenameMenu();
             RefreshXml();
