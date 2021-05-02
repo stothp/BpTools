@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{ABBC61F7-1F23-419A-9C09-2475A0E2FB2F}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>BpTools</RootNamespace>
-    <AssemblyName>BpTools</AssemblyName>
+    <RootNamespace>BpToolsWPFClientTest</RootNamespace>
+    <AssemblyName>BpToolsWPFClientTest</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -72,8 +72,9 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="BpToolsLib">
-      <HintPath>..\BpToolsLib\bin\x64\Release\BpToolsLib.dll</HintPath>
+    <Reference Include="BpTools, Version=1.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\BpToolsLib\bin\x64\Release\BpTools.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -95,12 +96,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="LineWithArrow.xaml.cs">
-      <DependentUpon>LineWithArrow.xaml</DependentUpon>
+    <Compile Include="ArrowedLine.xaml.cs">
+      <DependentUpon>ArrowedLine.xaml</DependentUpon>
     </Compile>
     <Compile Include="StageSetRedraw.cs" />
     <Compile Include="CollectionGeneratorDialog.xaml.cs">
       <DependentUpon>CollectionGeneratorDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Arrow.xaml.cs">
+      <DependentUpon>Arrow.xaml</DependentUpon>
     </Compile>
     <Compile Include="StageFactory.cs" />
     <Compile Include="Stage.cs" />
@@ -179,11 +183,15 @@
     <Compile Include="DataRenameWindow.xaml.cs">
       <DependentUpon>DataRenameWindow.xaml</DependentUpon>
     </Compile>
-    <Page Include="LineWithArrow.xaml">
+    <Page Include="ArrowedLine.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
     <Page Include="CollectionGeneratorDialog.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Arrow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

@@ -23,6 +23,10 @@
                 <MenuItem Header="Delete unused data and collection stages" Click="MenuItem_Click_1"/>
             </MenuItem>
         </Menu>
+        <!--<StackPanel Grid.Row="0">
+            <Button Content="Load from clipboard" Click="Button_Click"/>
+            <Button Content="Save to clipboard" Click="Button_Click_1"/>
+        </StackPanel>-->
         <TabControl Grid.Row="1">
             <TabItem Header="Page1" >
                 <Grid Width="Auto" Height="Auto">

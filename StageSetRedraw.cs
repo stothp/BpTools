@@ -95,7 +95,7 @@ namespace BpToolsWPFClientTest
                 Canvas.SetZIndex(choice, 2);
                 if (bpChoice.OnTrue != null)
                 {
-                    LineWithArrow line = new LineWithArrow(new Point(bpStageChoice.X, bpStageChoice.Y + bpChoice.Distance), new Point(bpChoice.OnTrue.X, bpChoice.OnTrue.Y));
+                    ArrowedLine line = new ArrowedLine(new Point(bpStageChoice.X, bpStageChoice.Y + bpChoice.Distance), new Point(bpChoice.OnTrue.X, bpChoice.OnTrue.Y));
                     line.Transforms.Children.Add(cTrans);
                     canvas.Children.Add(line);
                     Canvas.SetZIndex(line, 1);
@@ -107,7 +107,7 @@ namespace BpToolsWPFClientTest
         {
             foreach (BpToolsLib.Stage nextStage in ((BpToolsLib.ITraversable)bpStage).NextStages)
             {
-                LineWithArrow line = new LineWithArrow(new Point(bpStage.X, bpStage.Y), new Point(nextStage.X, nextStage.Y));
+                ArrowedLine line = new ArrowedLine(new Point(bpStage.X, bpStage.Y), new Point(nextStage.X, nextStage.Y));
                 line.Transforms.Children.Add(cTrans);
                 canvas.Children.Add(line);
                 Canvas.SetZIndex(line, 1);
